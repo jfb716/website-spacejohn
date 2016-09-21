@@ -2,48 +2,157 @@
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
-    <title>SpaceJohn - Home</title>
-    <link rel="stylesheet" href="resources/css/style.css">
-    <script src="resources/js/pw.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="John F. Black">
+    <meta name="description" content="Test Site for John F. Black">
+    <meta name="keywords" content="John, John Black, John F Black, John F. Black, John Francis Black, Test, Test Site, Synacor, Facebook, NBC, NBCUniversal, LocalEdge, Buffalo, New York, New York City, NYC, Grand Island, University at Buffalo, UB, Technical Support, Ad Operations, AdOps, AdTech">
+    <title>SpaceJohn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:499px)" href="css/small.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width:732px)" href="css/med.css">
+    <link rel="stylesheet" media="(min-width:732px) and (max-width:1050px)" href="css/large.css">
+    <link rel="stylesheet" media="(min-width:1051px)" href="css/xlarge.css">
 </head>
 
     <body>
+
+    <header>
+    </header>
+    <br>
+    <div class="blue_bar_top">
+    </div>
+    <br>
+    <br>
+
+    <div style="height:250px;width:300px;margin:auto">
+            <html>
+  <head>
+    <style>
+
+     #ad_root {
+        display: none;
+        height: 235px;
+        line-height: 16px;
+        position: relative;
+        width: 298px;
+        border-bottom-style: solid;
+        border-color: #E5E5E5;
+        border-width: 1px;
+      }
+      .thirdPartyMediaClass {
+        height: 157px;
+        width: 298px;
+
+      }
+
+      .thirdPartyMediaClass div:nth-child(1) {
+          background-color: unset !important;
+          box-shadow: none !important;
+      }
+
+
+      .thirdPartyMediaClass a:nth-child(1) {
+        margin-left: 0 !important;
+      }
+      
+      .thirdPartyTitleClass {
+        font-family: Montserrat,arial,sans-serif;
+        font-size: 14px;
+        margin: 4px;
+        font-weight:700;
+        line-height:15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .thirdPartyBodyClass {
+        font-family: Montserrat,arial,sans-serif;
+        font-size: 12px;
+        margin: 4px;
+        font-weight:300;
+        width: 280px;
+        height: 32px;
+        overflow: hidden;
+      }
+      .thirdPartyCallToActionClass {
+        font-family: Montserrat,arial,sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 6px 0 4px 0;
+        text-align:center;
+        max-height:35px;
+        max-width:124px;
+        line-height: 17px;
+        margin: auto;
+        background-color: #fbb31e;
+        margin-top: 10px;
+      }
+      
+      #ad_root div:nth-child(2) {
+            background: transparent !important;
+            padding: 0 !important;
+        }
+        #ad_root div:nth-child(2) img {
+            background: transparent !important;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <script>var inDapIF = false;</script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.Event.subscribe(
+          'ad.loaded',
+          function(placementId) {
+            console.log('Audience Network ad loaded');
+            document.getElementById('ad_root').style.display = 'block';
+          }
+        );
+        FB.Event.subscribe(
+          'ad.error',
+          function(errorCode, errorMessage, placementId) {
+            console.log('Audience Network error (' + errorCode + ') ' + errorMessage);
+          }
+        );
+        FB.XFBML.parse();
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk/xfbml.ad.js#xfbml=1&version=v2.5&appId=118220978561571";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-ad" data-placementid="118220978561571_223415828042085" data-format="native" data-nativeadid="ad_root" data-testmode="false"></div>
+    <div style="height:250px;width:300px;margin:auto">
+    <div id="ad_root">
+      <a class="fbAdLink">
+        <div class="fbAdMedia thirdPartyMediaClass"></div>
+        <div class="fbAdTitle thirdPartyTitleClass"></div>
+        <div class="fbAdBody thirdPartyBodyClass"></div>
+        <div class="fbAdCallToAction thirdPartyCallToActionClass"></div>
+      </a>
+    </div>
+    </div>
+  </body>
+</html>
     
-        <div class="container">
-            <header class="header">
-                <a  class="link-title" href="/">John F. Black</a>
-                <a class="facebook-icon" href="https://www.facebook.com/JohnFrancisBlack" target="_blank"><img src=resources/img/fb.png></a>
-                <a class="linkedin-icon" href="https://www.linkedin.com/in/johnfblack" target="_blank"><img src=resources/img/lnk.png></a>
-            </header>
+    </div>
+      <br>
+      <br>  
 
-            <nav class="menu">
-                <a href="/"> Home</a> &nbsp; &nbsp; &nbsp;
-                <a href="about.html">About</a> &nbsp; &nbsp; &nbsp;
-                <a href="resume.html">Resume</a> &nbsp; &nbsp; &nbsp;
-                <a href="javascript:jwPlayer()">JW Player</a> &nbsp; &nbsp; &nbsp;
-                <a href="javascript:flowPlayer()">Flow Player</a> &nbsp; &nbsp; &nbsp;
-                <a href="javascript:lrPlayer()">LR Player</a> &nbsp; &nbsp; &nbsp;
-                <a href="javascript:customPlayer()">Custom Player</a> &nbsp; &nbsp; &nbsp;
-            </nav>
-
-            <article class="main">
-                <div id="home-image">
-                    <img src="resources/img/space.jpg" alt="home-image">   
-                </div>
-                <div class="main-content">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-                </div>
-            </article>
-            
-
-
-            <footer>
-                &copy; 2016 Personal Website &nbsp;<span class="separator">|</span> Designed by  <a href="http://www.johnfblack.com">jfb</a>
-            </footer>
+    <div class="blue_bar_bot">
+    </div>
+    <br>
+    <footer>
+    </footer>
     
+</body>
     
     
     
