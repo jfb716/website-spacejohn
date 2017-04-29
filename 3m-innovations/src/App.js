@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to the home of Flare</h2>
+          <h2>Welcome to the home of FLARE</h2>
         </div>
         <div className="body-container">
           <video controls preload>
